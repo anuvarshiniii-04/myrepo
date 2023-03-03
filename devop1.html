@@ -1,7 +1,11 @@
-<html>
-  <head>
-  <title>MY BOOK </title>
-  </head>
-  <body><bg color "red">i book </body>
-    </html>
+pipeline{
+    agent any
+    stages{
+       stage('build'){
+          steps{
+              bat 'whoami'
+          }
+       }
+    }
+}
     
